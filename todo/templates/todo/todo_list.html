@@ -1,24 +1,28 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Todo-App</title>
-  </head>
-  <body>
-      {% if request.user.is_authentificated %}
-        Hello {{ request.user.username }}
-      {% else %}
-        Hello anonymous user
-      {% endif %}
+{% extends "base.html" %}
 
-      <a href="/create">Create a todo</a>
+{% block  content %}
+      <div class="text-center">
+        <p>
+        {% if request.user.is_authentificated %}
+          Hello {{ request.user.username }}
+        {% else %}
+          Hello anonymous user
+        {% endif %}
+        </p>
 
-      <ul>
+        <a class="btn btn-primary" href="/create">Create a todo</a>
+      </div>
+
+      <div class="col-4 offset-4">
         {% for todo in todo_list %}
-          <li><a href="/{{ todo.id }}">{{ todo.name }}, it's due {{ todo.due_date }}</li>
+          <div class="card mt-3">
+            <div class="car-header"> 
+              <a href="/{{ todo.id }}"><h4>{{ todo.name }}</h4></a>
+            </div>
+            <div class="card-body">
+              <p>It's due {{ todo.due_date }}</p>
+            </div>
+          </div>
         {% endfor %}
-      </ul>
-
-  </body>
-</html>
+      </div>
+{% endblock  %}
