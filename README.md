@@ -7,15 +7,12 @@
 
 > This is a simple Todo-App written in Django and hosted on replit.
 
-### 🏠 [Homepage](todo-app.pokacyb.repl.co)
+## How does it work
+This application allows anonymous users to create, edit or delete various todo notes. It uses Django on the back end, and html, CSS, Javascript on the front end.
+I used Django as the back end of my first app simply because I wanted to learn more about it. I think I will write more apps with it in the future, stay tuned!
+I faced some troubles on the front end side and the app isn't 100 % polished but I'm proud that it's working without issues. In the future I'd like to implement users with login.
 
-### ✨ [Demo](todo-app.pokacyb.repl.co)
-
-## Usage
-
-```sh
-You can access the app here: [todo-app.pokacyb.repl.co](todo-app.pokacyb.repl.co). 
-```
+### ✨ [Demo](https://todo-app.pokacyb.repl.co/)
 
 ## Author
 
@@ -28,7 +25,7 @@ You can access the app here: [todo-app.pokacyb.repl.co](todo-app.pokacyb.repl.co
 
 ## Show your support
 
-Give a ⭐️ if this project helped you!
+Give a ⭐️ if you liked this project!
 
 ***
 _This README was generated with ❤️ by [readme-md-generator](https://github.com/kefranabg/readme-md-generator)_
