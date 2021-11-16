@@ -12,6 +12,8 @@ This application allows anonymous users to create, edit or delete various todo n
 I used Django as the back end of my first app simply because I wanted to learn more about it. I think I will write more apps with it in the future, stay tuned!
 I faced some troubles on the front end side and the app isn't 100 % polished but I'm proud that it's working without issues. In the future I'd like to implement users with login.
 
+I would like to thank Dr. Charles Russell Severance, the University of Michigan, and Coursera for teaching me so much about Django. This app although of small scale, wouldn't have been possible without their vast knowledge.
+
 ### ✨ [Demo](https://todo-app.pokacyb.repl.co/)
 
 ## Author
